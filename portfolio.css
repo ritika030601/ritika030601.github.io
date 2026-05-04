@@ -316,37 +316,6 @@ nav.scrolled {
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
-.scroll-hint {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  color: var(--text-dim);
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  animation: fadeUp 1s var(--ease) 1.2s both;
-  z-index: 5;
-}
-.scroll-line {
-  width: 1px;
-  height: 40px;
-  background: linear-gradient(to bottom, var(--gold), transparent);
-  animation: scrollPulse 2s ease-in-out infinite;
-}
-@keyframes scrollPulse {
-  0%,
-  100% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 1;
-  }
-}
 
 /* ═══════════════════════════════════════════
    SECTION SHARED STYLES
@@ -449,7 +418,7 @@ section {
 }
 .marquee-track {
   display: flex;
-  gap: 0;
+  gap: 28px;
   animation: marquee 28s linear infinite;
   white-space: nowrap;
   width: max-content;
@@ -457,8 +426,8 @@ section {
 .marquee-item {
   display: flex;
   align-items: center;
-  gap: 32px;
-  padding: 0 40px;
+  gap: 28px;
+  padding: 0;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -545,8 +514,6 @@ section {
   border: 1px solid var(--border);
   border-radius: 50%;
 }
-.about-content {
-}
 .about-lead {
   font-family: "Cormorant Garamond", serif;
   font-size: 28px;
@@ -587,7 +554,7 @@ section {
   padding: 11px 14px;
   border: 1px solid var(--border);
   border-radius: 4px;
-  font-family: "Syne", sans-serif;
+  font-family: var(--body-font);
   font-size: 14.5px;
   font-weight: 500;
   letter-spacing: 0;
@@ -972,8 +939,6 @@ section {
   color: var(--text-muted);
   margin-top: 4px;
 }
-.exp-timeline {
-}
 .exp-entry {
   padding: 34px 36px;
   border: 1px solid var(--border);
@@ -1123,7 +1088,7 @@ section {
 }
 .stack-chip-copy {
   display: block;
-  font-family: "Syne", sans-serif;
+  font-family: var(--body-font);
   font-size: 14.5px;
   font-weight: 500;
   line-height: 1.7;
@@ -1258,8 +1223,6 @@ section {
   gap: 80px;
   align-items: center;
   padding: 100px 0;
-}
-.contact-left {
 }
 .contact-available {
   display: inline-flex;
@@ -1493,10 +1456,49 @@ footer {
     justify-content: flex-start;
     gap: 6px;
     padding: 10px 12px;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+  .featured-project-image {
+    height: 260px;
   }
   .project-shot {
     min-width: 92px;
     max-width: 110px;
+  }
+  .featured-project-body {
+    padding: 24px 18px;
+    gap: 20px;
+  }
+  .featured-label {
+    letter-spacing: 0.14em;
+    margin-bottom: 10px;
+  }
+  .featured-title {
+    font-size: 38px;
+    margin-bottom: 12px;
+  }
+  .featured-desc {
+    max-width: none;
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 18px;
+  }
+  .featured-metrics {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .metric-val {
+    font-size: 30px;
+  }
+  .metric-label {
+    margin-top: 2px;
+    font-size: 10.5px;
+  }
+  .featured-project-body .btn-primary {
+    width: 100%;
+    justify-content: center;
   }
   .skills-grid {
     grid-template-columns: 1fr;
