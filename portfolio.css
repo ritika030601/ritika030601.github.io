@@ -787,6 +787,9 @@ section {
   gap: 40px;
   align-items: start;
 }
+.featured-project-body > div {
+  min-width: 0;
+}
 .featured-label {
   font-family: "Syne Mono", monospace;
   font-size: 10px;
@@ -810,7 +813,12 @@ section {
 }
 .featured-metrics {
   display: flex;
-  gap: 32px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.featured-metrics > div {
+  min-width: 150px;
+  flex: 1 1 0;
 }
 .metric-val {
   font-family: "Cormorant Garamond", serif;
@@ -1439,6 +1447,19 @@ footer {
   }
   .featured-project-body {
     grid-template-columns: 1fr;
+    padding: 28px 22px;
+    gap: 22px;
+  }
+  .featured-desc {
+    max-width: none;
+  }
+  .featured-metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .featured-metrics > div {
+    min-width: 0;
   }
 }
 @media (max-width: 560px) {
