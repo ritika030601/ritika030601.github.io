@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avptivo Case Study - Ritika Hasani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Syne+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="case-study.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="index.html">Ritika <em>Hasani</em></a>
+        <a class="back-link" href="index.html#work">Back to Work</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero reveal">
+        <p class="kicker">Case Study - Fitness and Habit UX</p>
+        <h1>Avptivo</h1>
+        <p>
+          Avptivo is a wellness ecosystem designed to improve workout
+          consistency, nutrition clarity, and long-term habit retention. This
+          summary covers the major stages from problem framing to final UI,
+          while keeping the full-depth details on Behance.
+        </p>
+
+        <div class="timeline-strip">
+          <article class="timeline-step">
+            <div class="timeline-step-num">01</div>
+            <div class="timeline-step-title">Problem</div>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step-num">02</div>
+            <div class="timeline-step-title">Research</div>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step-num">03</div>
+            <div class="timeline-step-title">Flow + IA</div>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step-num">04</div>
+            <div class="timeline-step-title">UI System</div>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step-num">05</div>
+            <div class="timeline-step-title">Outcome</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Problem Statement</h2>
+        <p class="section-intro">
+          Users start with intent but drop when planning and tracking become
+          fragmented. The product needed a unified daily flow that makes
+          workouts, meal choices, and progress tracking feel connected.
+        </p>
+        <div class="points">
+          <div class="point">
+            Pain point: users lose continuity between workout and nutrition
+            planning.
+          </div>
+          <div class="point">
+            Pain point: progress metrics are often noisy and non-actionable.
+          </div>
+          <div class="point">
+            UX goal: reduce cognitive load and guide the next best action.
+          </div>
+          <div class="point">
+            UX goal: make repeat usage fast enough for daily routine behavior.
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>User Personas</h2>
+        <p class="section-intro">
+          Two distinct users shaped every product and architecture decision.
+        </p>
+        <div class="persona-grid">
+          <div class="persona-block reveal reveal-delay-1">
+            <div class="persona-name">Ms. Anita Sharma, 32 — Working Mom</div>
+            <div class="points">
+              <div class="point">
+                Occupation: Marketing professional, mother of one
+              </div>
+              <div class="point">
+                Goal: exercise 10–30 min daily, manage diet, build routine
+                without disrupting family life
+              </div>
+              <div class="point">
+                Pain point: struggles to find time; gets distracted and misses
+                sessions
+              </div>
+              <div class="point">
+                Needs: guided fitness plan, nutrition management, habit
+                tracking, and daily motivation
+              </div>
+            </div>
+          </div>
+          <div class="persona-block reveal reveal-delay-2">
+            <div class="persona-name">
+              Mr. Rohan Patil, 27 — Fitness Enthusiast
+            </div>
+            <div class="points">
+              <div class="point">
+                Occupation: IT professional with an active social life
+              </div>
+              <div class="point">
+                Goal: track detailed metrics, build physique, join social
+                fitness challenges
+              </div>
+              <div class="point">
+                Pain point: plateauing; struggles to stay motivated without
+                accountability
+              </div>
+              <div class="point">
+                Needs: advanced metric tracking, social challenges, competition
+                features, and goal streaks
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Research Phase</h2>
+        <p class="section-intro">
+          Five "How Might We" questions framed the entire product direction and
+          feature prioritisation.
+        </p>
+        <div class="hmw-list">
+          <div class="hmw-item">
+            <span class="hmw-num">HMW 1</span>
+            <p>
+              Turn complex biometrics into a simple, intuitive 360° body visual?
+            </p>
+          </div>
+          <div class="hmw-item">
+            <span class="hmw-num">HMW 2</span>
+            <p>
+              Create micro-workouts that keep users consistent with just 15
+              minutes a day?
+            </p>
+          </div>
+          <div class="hmw-item">
+            <span class="hmw-num">HMW 3</span>
+            <p>Make fitness a social, accountability-driven experience?</p>
+          </div>
+          <div class="hmw-item">
+            <span class="hmw-num">HMW 4</span>
+            <p>
+              Use AI to auto-log nutrition from a single photo or quick
+              description?
+            </p>
+          </div>
+          <div class="hmw-item">
+            <span class="hmw-num">HMW 5</span>
+            <p>
+              Build a frictionless daily Metric Hub that encourages effortless
+              progress tracking?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>User Journey</h2>
+        <div class="two-col">
+          <article class="block">
+            <h3>Discovery and Onboarding</h3>
+            <div class="points">
+              <div class="point">
+                User sees ad, evaluates value prop against competing apps
+              </div>
+              <div class="point">Insight: "Is this actually effective?"</div>
+              <div class="point">
+                Design response: zero-friction setup, immediate clarity
+              </div>
+            </div>
+          </article>
+          <article class="block">
+            <h3>Activity Selection</h3>
+            <div class="points">
+              <div class="point">
+                User browses workout library or chooses a pre-built plan
+              </div>
+              <div class="point">
+                Insight: "Which workout should I start with?"
+              </div>
+              <div class="point">
+                Design response: AI recommendations + a "let's go" coach nudge
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="two-col" style="margin-top: 18px">
+          <article class="block">
+            <h3>Tracking and Execution</h3>
+            <div class="points">
+              <div class="point">
+                User works out and logs metrics in real time
+              </div>
+              <div class="point">
+                Insight: "Am I improving? How much longer?"
+              </div>
+              <div class="point">
+                Design response: live feedback, offline mode, motivating cues
+              </div>
+            </div>
+          </article>
+          <article class="block">
+            <h3>Retention and Community</h3>
+            <div class="points">
+              <div class="point">
+                User views progress, shares milestones, joins challenges
+              </div>
+              <div class="point">
+                Feeling: "Making progress — challenges motivate me!"
+              </div>
+              <div class="point">
+                Design response: mindfulness rewards, streaks, social challenge
+                loops
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Product Map and Architecture</h2>
+        <p class="section-intro">
+          Four core navigation nodes, each mapped to distinct user intent
+          states.
+        </p>
+        <div class="two-col">
+          <article class="block">
+            <h3>Home and Track</h3>
+            <div class="points">
+              <div class="point">Daily dashboard with progress snapshots</div>
+              <div class="point">
+                AI-driven daily nudge and metric quick-view
+              </div>
+              <div class="point">
+                Calorie tracker and workout-in-progress state
+              </div>
+              <div class="point">Attach workouts and metric logs</div>
+            </div>
+          </article>
+          <article class="block">
+            <h3>Plan and Profile</h3>
+            <div class="points">
+              <div class="point">
+                Daily planner, core program, discovery feed
+              </div>
+              <div class="point">Content library with full customisation</div>
+              <div class="point">Personal branding and social growth</div>
+              <div class="point">
+                Physical metrics, fitness goals, system settings
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Figma UI Screens</h2>
+        <p class="section-intro">
+          High-fidelity screens designed in Figma, covering core flow states
+          from the daily dashboard and workout detail to nutrition and progress.
+        </p>
+        <div class="gallery">
+          <img src="avptivo_1.png" alt="Avptivo screen one" />
+          <img src="avptivo_2.png" alt="Avptivo screen two" />
+          <img src="avptivo_3.png" alt="Avptivo screen three" />
+          <img src="avptivo_4.png" alt="Avptivo screen four" />
+          <img src="avptivo_5.png" alt="Avptivo screen five" />
+          <img src="avptivo_6.png" alt="Avptivo screen six" />
+        </div>
+        <p class="gallery-caption">
+          A few selected screens — full screens and interactive prototype
+          available on the Behance case study.
+        </p>
+      </section>
+
+      <section class="section reveal">
+        <h2>UI Design Selections</h2>
+        <div class="two-col">
+          <article class="block">
+            <h3>Typography</h3>
+            <div class="points">
+              <div class="point">
+                Primary typeface: Gantari — geometric clarity with warmth
+              </div>
+              <div class="point">
+                Weights used: Regular, Medium, Bold, Extra Bold
+              </div>
+              <div class="point">
+                Clean letterforms designed to support data-heavy fitness metrics
+              </div>
+            </div>
+          </article>
+          <article class="block">
+            <h3>Interaction Patterns</h3>
+            <div class="points">
+              <div class="point">
+                Sliders for calorie targets and activity intensity
+              </div>
+              <div class="point">
+                Progress rings showing workout completion state
+              </div>
+              <div class="point">
+                Card-based AI nutrition suggestions with inline edit
+              </div>
+              <div class="point">
+                Reusable modules for workout, meal, and progress cards
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="swatch-row">
+          <div class="swatch">
+            <div class="swatch-dot" style="background: #aa5b26"></div>
+            <span class="swatch-label">#AA5B26 — Warm Brown</span>
+          </div>
+          <div class="swatch">
+            <div class="swatch-dot" style="background: #e8aa81"></div>
+            <span class="swatch-label">#E8AA81 — Peach</span>
+          </div>
+          <div class="swatch">
+            <div class="swatch-dot" style="background: #2750c7"></div>
+            <span class="swatch-label">#2750C7 — Action Blue</span>
+          </div>
+          <div class="swatch">
+            <div class="swatch-dot" style="background: #888bcf"></div>
+            <span class="swatch-label">#888BCF — Soft Lavender</span>
+          </div>
+          <div class="swatch">
+            <div
+              class="swatch-dot"
+              style="background: #f1f1f1; border-color: rgba(47, 36, 27, 0.2)"
+            ></div>
+            <span class="swatch-label">#F1F1F1 — Off White</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Outcome Snapshot</h2>
+        <div class="points">
+          <div class="point">
+            Stronger daily continuity through connected workout + nutrition
+            pathways.
+          </div>
+          <div class="point">
+            Faster task completion due to simplified logging and metric reading.
+          </div>
+          <div class="point">
+            Better retention orientation through habit loop framing.
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <p>
+          For complete case study click on the link:
+          <a
+            href="https://www.behance.net/gallery/247810553/Avptivo"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Avptivo on Behance</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <script>
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>

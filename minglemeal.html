@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MingleMeal Case Study - Ritika Hasani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Syne+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="case-study.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="index.html">Ritika <em>Hasani</em></a>
+        <a class="back-link" href="index.html#work">Back to Work</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero reveal">
+        <p class="kicker">UX Case Study - Food Rescue Network</p>
+        <h1>MingleMeal</h1>
+        <p>
+          MingleMeal is a food rescue platform connecting restaurants,
+          volunteers, and NGOs to reduce food wastage. This is a UX-focused case
+          study covering research, the donor journey, system mapping, and
+          role-based product flows. Screens shown are mid-fidelity wireframes.
+        </p>
+
+        <div class="timeline-strip">
+          <article class="timeline-step">
+            <div class="timeline-step-num">01</div>
+            <div class="timeline-step-title">Problem</div>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step-num">02</div>
+            <div class="timeline-step-title">Research</div>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step-num">03</div>
+            <div class="timeline-step-title">Journey + Map</div>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step-num">04</div>
+            <div class="timeline-step-title">Role Flows</div>
+          </article>
+          <article class="timeline-step">
+            <div class="timeline-step-num">05</div>
+            <div class="timeline-step-title">Outcome</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Problem Statement</h2>
+        <p class="section-intro">
+          Food surplus and hunger coexist because coordination between donors,
+          transport, and receiving organizations is fragmented. The system
+          needed a reliable, low-friction donation journey that all actors can
+          complete quickly.
+        </p>
+        <div class="points">
+          <div class="point">
+            Donation process lacked one accountable, end-to-end path.
+          </div>
+          <div class="point">
+            Time-sensitive pickups failed due to delayed assignment flow.
+          </div>
+          <div class="point">
+            Role interfaces showed too much information at once.
+          </div>
+          <div class="point">
+            Visibility gaps reduced trust across stakeholders.
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Research and Market Context</h2>
+        <p class="section-intro">
+          The opportunity was grounded in data: India generates ~74 million
+          tonnes of food waste annually, and platforms for donation coordination
+          were either absent or too fragmented to trust.
+        </p>
+        <div class="two-col">
+          <article class="block">
+            <h3>Why MingleMeal</h3>
+            <div class="points">
+              <div class="point">
+                Annual food wastage in India costs the economy ₹90,000 crore
+              </div>
+              <div class="point">
+                Global targets aim to reduce per-capita food waste by half by
+                2030
+              </div>
+              <div class="point">
+                No real-time app existed to manage surplus donation digitally
+              </div>
+              <div class="point">
+                Identified root causes behind donation drop-offs at each stage
+              </div>
+            </div>
+          </article>
+          <article class="block">
+            <h3>Deep Dive Findings</h3>
+            <div class="points">
+              <div class="point">
+                Donor journey lacked clarity at posting and confirmation
+              </div>
+              <div class="point">
+                Volunteer assignment needed stronger context and validation
+              </div>
+              <div class="point">
+                NGOs required faster verification and live pickup visibility
+              </div>
+              <div class="point">
+                Urgency points where delay directly leads to wastage were
+                unmapped
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Deep Dive — Research and Insight</h2>
+        <p class="section-intro">
+          Primary research conducted across three stakeholder groups to map real
+          operational needs and friction points.
+        </p>
+        <div class="two-col">
+          <article class="block reveal reveal-delay-1">
+            <h3>Restaurants — The Donors</h3>
+            <div class="points">
+              <div class="point">
+                Why food is wasted: over-estimation of demand and order
+                cancellations
+              </div>
+              <div class="point">
+                Food tracking method: mostly manual checks; no formal digital
+                log
+              </div>
+              <div class="point">
+                Best pickup time: 30 minutes before or after closing
+              </div>
+              <div class="point">
+                Info per donation: dish name, approximate weight, pickup time
+              </div>
+            </div>
+          </article>
+          <article class="block reveal reveal-delay-2">
+            <h3>NGOs — The Receivers</h3>
+            <div class="points">
+              <div class="point">
+                Daily capacity: 50–300 meals depending on storage
+              </div>
+              <div class="point">
+                Beneficiary tracking: manual registers at distribution centers
+              </div>
+              <div class="point">
+                Biggest digital need: real-time alerts for available food nearby
+              </div>
+              <div class="point">
+                Cannot store overnight — no industrial fridges; need immediate
+                dispatch
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="two-col" style="margin-top: 18px">
+          <article class="block reveal reveal-delay-1">
+            <h3>Drivers — The Bridge</h3>
+            <div class="points">
+              <div class="point">
+                Most have two-wheelers; limited access to large vans
+              </div>
+              <div class="point">
+                Available 1–5 hours on weekends or post-work weekdays
+              </div>
+              <div class="point">
+                Need exact food weight and Google Maps location before a task
+              </div>
+              <div class="point">
+                Stay active for: certificates, digital badges, fuel
+                reimbursements
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Donor Journey</h2>
+        <p class="section-intro">
+          Mapped four key stages, capturing what users do, what they feel, key
+          touchpoints, and ideas for improvement.
+        </p>
+        <div class="two-col">
+          <article class="block">
+            <h3>Awareness and Initiation</h3>
+            <div class="points">
+              <div class="point">
+                User signs up and asks: "Is this legal / safe?"
+              </div>
+              <div class="point">
+                Logs food type, quantity, and available pickup time
+              </div>
+              <div class="point">
+                Improvement: add clear legal/liability disclaimer up front
+              </div>
+              <div class="point">
+                Improvement: use AI to suggest optimised pickup times
+              </div>
+            </div>
+          </article>
+          <article class="block">
+            <h3>Connect and Track Impact</h3>
+            <div class="points">
+              <div class="point">Push notification to nearby NGO/Volunteer</div>
+              <div class="point">
+                User wonders: "When will someone pick it up?"
+              </div>
+              <div class="point">
+                Views metrics on meals provided and CO₂ saved
+              </div>
+              <div class="point">
+                Improvement: integrate WhatsApp for direct coordination
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Role-Based Product Flows</h2>
+        <div class="two-col">
+          <article class="block">
+            <h3>Restaurant Login</h3>
+            <div class="points">
+              <div class="point">
+                Registers with business credentials via dashboard
+              </div>
+              <div class="point">
+                Selects food type, passes AI freshness check
+              </div>
+              <div class="point">
+                Sets pickup location and time, reviews and posts
+              </div>
+              <div class="point">
+                Alert triggers to nearby NGOs for collection
+              </div>
+            </div>
+          </article>
+          <article class="block">
+            <h3>Driver / Volunteer Login</h3>
+            <div class="points">
+              <div class="point">
+                Registers with personal and vehicle details
+              </div>
+              <div class="point">
+                Sees task list of food packages; accepts a task
+              </div>
+              <div class="point">
+                Navigates to restaurant, scans QR code to confirm pickup
+              </div>
+              <div class="point">
+                Follows route to NGO, scans QR again at drop-off
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="two-col" style="margin-top: 18px">
+          <article class="block">
+            <h3>NGO Login</h3>
+            <div class="points">
+              <div class="point">
+                Registers with legal credentials to access Food Map
+              </div>
+              <div class="point">
+                Receives real-time donation alerts; reviews food details
+              </div>
+              <div class="point">
+                Clicks "Claim" to track delivery via live map
+              </div>
+              <div class="point">
+                Scans driver QR on arrival to confirm receipt and record impact
+              </div>
+            </div>
+          </article>
+          <article class="block">
+            <h3>System Map Logic</h3>
+            <div class="points">
+              <div class="point">
+                All three roles share a unified status language
+              </div>
+              <div class="point">
+                States: pending → accepted → assigned → in-transit → confirmed
+              </div>
+              <div class="point">
+                QR codes provide verification at every handoff point
+              </div>
+              <div class="point">
+                Badges and fuel reimbursement reward volunteer service
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Mid-Fidelity Wireframes</h2>
+        <p class="section-intro">
+          Wireframes created in Figma documenting major UX flow checkpoints:
+          onboarding, food listing, assignment, routing, and NGO confirmation.
+        </p>
+        <div class="gallery">
+          <img src="minglemeal_1.png" alt="MingleMeal screen one" />
+          <img src="minglemeal_2.png" alt="MingleMeal screen two" />
+          <img src="minglemeal_3.png" alt="MingleMeal screen three" />
+          <img src="minglemeal_4.png" alt="MingleMeal screen four" />
+          <img src="minglemeal_5.png" alt="MingleMeal screen five" />
+          <img src="minglemeal_7.png" alt="MingleMeal screen seven" />
+        </div>
+        <p class="gallery-caption">
+          A few selected wireframe screens — full flow and all role screens are
+          available on the Behance case study.
+        </p>
+      </section>
+
+      <section class="section reveal">
+        <h2>Outcome Snapshot</h2>
+        <div class="points">
+          <div class="point">
+            Reduced coordination ambiguity through structured role pathways.
+          </div>
+          <div class="point">
+            Improved operational confidence with clearer system visibility.
+          </div>
+          <div class="point">
+            Created a practical base for scalable food-rescue logistics.
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <p>
+          For complete case study click on the link:
+          <a
+            href="https://www.behance.net/gallery/241672603/MingleMeal"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MingleMeal on Behance</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <script>
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>
