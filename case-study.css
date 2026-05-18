@@ -372,6 +372,10 @@ a {
   .persona-grid {
     grid-template-columns: 1fr;
   }
+
+  .section-with-image {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 600px) {
@@ -437,6 +441,47 @@ a {
   color: var(--text-dim);
   letter-spacing: 0.05em;
   margin-top: 12px;
+}
+
+/* section images - removed, using section-image-right instead */
+
+/* two-column layout with image on right */
+.section-with-image {
+  display: grid;
+  grid-template-columns: 1fr 0.35fr;
+  gap: 24px;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.section-content {
+  flex: 1;
+}
+
+.section-image-right {
+  flex: 1;
+}
+
+.section-image-right img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.section-image-right img.water-image-small {
+  width: 60%;
+  max-width: 60%;
+}
+
+@media (max-width: 900px) {
+  .section-with-image {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
 
 @media (max-width: 380px) {
